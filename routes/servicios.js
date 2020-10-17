@@ -7,7 +7,7 @@ router.get('/servicios', function(req, res, next) {
 
 /* Lo único diferente es que aquí hacemos el render de servicios en lugar de index
 El tema de las variables title y demás de momento esta de adorno */
-  res.render('servicios', { title: 'Express' });
+  res.render('index', { title: 'Express' });
 });
 
 module.exports = router;
