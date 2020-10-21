@@ -10,6 +10,7 @@ vamos a poner todas nuestras paginitas chulas aquí */
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var serviciosRouter = require('./routes/servicios');
+var guitarrasRouter = require('./routes/guitarras');
 var dbRouter = require('./routes/db');
 
 var app = express();
@@ -28,6 +29,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/', serviciosRouter);
 app.use('/', dbRouter );
+app.use('/', guitarrasRouter );
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
